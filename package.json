@@ -1,0 +1,22 @@
+{
+  "name": "conversor_numerico",
+  "version": "1.0.0",
+  "description": "Conversor de sistemas numericos",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DardelS3/conversor_numerico.git"
+  },
+  "author": "DardelS3",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DardelS3/conversor_numerico/issues"
+  },
+  "homepage": "https://github.com/DardelS3/conversor_numerico#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
