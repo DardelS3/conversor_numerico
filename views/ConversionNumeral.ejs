@@ -11,45 +11,50 @@
 </head>
 
 <body class="row">
-  <h1 class="text-center" id="TituloPrincipal">Conversion de Sistemas Numéricos</h1>
+  <div>
+    <h1 class="text-center" id="TituloPrincipal">Conversion de Sistemas Numéricos</h1>
+  </div>
   <!-- Aqui hay que escribir el codigo -->
 
-  <div class="row text-center ">
-    <br>
-    <div class="col-xs-12 col-md-5">
+  <div class="row text-center">
+    <div class="col-xs-12 col-md-6 ">
       <div class="row">
-        <a class="btn btn-primary">Binario</a>
-        <a class="btn btn-warning">Octal</a>
-        <a class="btn btn-success">Decimal</a>
-        <a class="btn btn-danger">Hexagesimal</a>
+        <a class="btn btn-success" id="OriDec">Decimal</a>
+        <a class="btn btn-primary" id="OriBin">Binario</a>
+        <a class="btn btn-warning" id="OriOct">Octal</a>
+        <a class="btn btn-danger" id="OriHex">Hexagesimal</a>
       </div>
       <br>
+      <h2 id="numeroOriginal">Decimal</h2>
+      <br>
       <div>
-        <textarea name="" id="" cols="30" rows="10" class="form-control 3"></textarea>
+        <textarea placeholder="Escribe un numero para convertir"name="" id="pregunta" cols="30" rows="2" class="form-control 3"></textarea>
 
       </div>
     </div>
-    <div class="col-xs-12 col-md-2 vcenter">
-    <a class="btn btn-info btn-lg ">Convertir</a>
-  </div>
-  <div class="col-xs-12 col-md-5 pull-right">
-    <div class="row">
-      <a class="btn btn-primary">Binario</a>
-      <a class="btn btn-warning">Octal</a>
-      <a class="btn btn-success">Decimal</a>
-      <a class="btn btn-danger">Hexagesimal</a>
+    <!-- <div class="col-xs-12 col-md-2">
+      <a class="btn btn-info btn-lg" style="vertical-align:middle" >Convertir</a>
+    </div> -->
+    <div class="col-xs-12 col-md-6 ">
+      <div class="row">
+        <a class="btn btn-success" id="ConDec">Decimal</a>
+        <a class="btn btn-primary" id="ConBin">Binario</a>
+        <a class="btn btn-warning" id="ConOct">Octal</a>
+        <a class="btn btn-danger" id="ConHex">Hexagesimal</a>
+      </div>
+      <br>
+      <h2 id="numeroConvertido">Decimal</h2>
+      <br>
+      <div>
+         <h2 id="resultado">0</h2>
+      </div>
     </div>
-    <br>
-    <div>
-      <textarea name="" id="" cols="30" rows="10" class="form-control 3"></textarea>
-
-    </div>
-  </div>
   </div>
 
   <!-- Aqui van los scripts (Antes de que termine el body) -->
-  <script type="text/javascript" src="/javascripts/jquery-3.3.1.min.js" ></script>
+  <script type="text/javascript" src="/javascripts/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="/cdn/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/javascripts/conversores.js"></script>
 </body>
 
 </html>
